@@ -6,8 +6,8 @@ class node
     private:
     int data;
     node *next;
-    node *front=NULL;
-    node *rear=NULL;
+    node *front;
+    node *rear;
     bool *visited;
     public:
     void input(int n1,int n2);
@@ -15,12 +15,11 @@ class node
     void enqueue(int x);
     int dequeue();
     int isempty();
-   /* node()
+    node()
     {
       front=NULL;
       rear=NULL;
     }
-    */
 };
 void node::enqueue(int x)
 {
